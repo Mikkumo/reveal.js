@@ -1,40 +1,118 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+	<title>WebAssembly</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/sky.css">
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+<body>
+<div class="reveal">
+	<div class="slides" style="letter-spacing: 0.2rem;">
+		<section>
+			<img src="https://softwareengineeringdaily.com/wp-content/uploads/2018/08/WebAssembly3.jpg" alt="webassembly logo">
+			<p>
+				<small>Created by <a href="https://github.com/Mikkumo">Sokolovskaya Lissa</a></small>
+			</p>
+		</section>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+		<section>
+			<section>
+				<p>
+					<b>WebAssembly (abbreviated Wasm)</b> - is a binary instruction format for a stack-based virtual machine.
+					Wasm is designed as a portable compilation target for programming languages, enabling deployment
+					on the web for client and server applications.
+				</p>
+			</section>
+			<section>
+				<img src="https://www.linuxadictos.com/wp-content/uploads/WebAssembly-1.jpg.webp" alt="computer">
+				<p>
+					<small>
+						This has huge implications for the web platform — it provides a way to run code written in
+						multiple languages on the web at near-native speed, with client apps running on the web that
+						previously couldn't have done so.
+					</small>
+				</p>
+			</section>
+		</section>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+		<section>
+			<h3>Let's look at the main advantages of WebAssembly</h3>
+			<br>
+			<ul >
+				<li>Efficient and fast</li><br>
+				<li>Safe</li><br>
+				<li>Part of the open web platform</li><br>
+				<li>Open and debuggable</li><br>
+			</ul>
+		</section>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+		<section>
+			<section>
+				<h3>How does WebAssembly fit into the web platform?</h3>
+			</section>
+			<section>
+				<ul >
+					<li>A virtual machine (VM)</li><br>
+					<li>A set of Web APIs</li><br>
+				</ul>
+			</section>
+			<section>
+				<img src="https://i.morioh.com/2020/01/09/aa18a19703ab.jpg" alt="webassembly and js">
+			</section>
+		</section>
+
+		<section>
+			<section>
+				<h3>WebAssembly key concepts</h3>
+			</section>
+			<section>
+				<ul >
+					<li>Module</li><br>
+					<li>Memory</li><br>
+					<li>Table</li><br>
+					<li>Instance</li><br>
+				</ul>
+			</section>
+			<section>
+				<img src="https://storage.googleapis.com/blog-images-backup/1*fY3Nj1rqpy1sveLt_Np9jg.png" alt="concepts">
+			</section>
+		</section>
+
+		<section>
+			<section>
+				<h3>How do I use WebAssembly in my app?</h3>
+			</section>
+			<section>
+				<ul >
+					<li>Porting a C/C++ application with Emscripten.</li><br>
+					<li>Writing or generating WebAssembly directly at the assembly level.</li><br>
+					<li>Writing a Rust application and targeting WebAssembly as its output.</li><br>
+				</ul>
+			</section>
+		</section>
+
+		<section>
+			<h3>Results</h3>
+			<img src="https://tech.mozfr.org/dotclear/public/bidouilleux/WASM/06-01-logo_party01.png" alt="browsers">
+		</section>
+	</div>
+</div>
+
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script>
+	Reveal.initialize({
+		hash: true,
+		plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+	});
+</script>
+</body>
 </html>
